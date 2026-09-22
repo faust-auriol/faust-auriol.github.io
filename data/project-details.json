@@ -1,0 +1,58 @@
+{
+  "sae-2-04": {
+    "category": "SAÉ 2.04 — BUT Informatique",
+    "title": "Exploitation d’une base de données",
+    "presentation": ["Cette SAÉ consistait à exploiter les données publiques de Parcoursup afin de les importer dans une base de données relationnelle puis de les analyser. Nous avons étudié la structure d’un fichier contenant plusieurs milliers d’enregistrements et plus d’une centaine de colonnes.", "Après l’importation des données, nous avons réalisé différentes requêtes SQL permettant d’obtenir des informations pertinentes sur les formations et les candidats. Une partie statistique était également demandée afin de confirmer ou d’infirmer plusieurs affirmations à partir des données disponibles.", "Cette réalisation nous a permis de comprendre l’importance de l’organisation des données, de leur qualité ainsi que leur utilisation dans l’aide à la décision."],
+    "work": ["Importation de données publiques de Parcoursup dans une base de données relationnelle.", "Étude de la structure d’un fichier comportant plusieurs milliers d’enregistrements et plus d’une centaine de colonnes.", "Réalisation de requêtes SQL sur les formations et les candidats.", "Analyse statistique à partir des données disponibles."],
+    "skills": ["Conception et exploitation d’une base de données relationnelle", "SQL", "Importation et nettoyage de données", "Analyse statistique de données", "Visualisation et interprétation de résultats"],
+    "soft": ["Esprit d’analyse", "Rigueur méthodologique", "Esprit critique"],
+    "other": ["Analyse de résultats", "Synthèse d’informations", "Communication écrite"]
+  },
+  "sae-2-02": {
+    "category": "SAÉ 2.02 — BUT Informatique",
+    "title": "Exploration algorithmique",
+    "presentation": ["L’objectif de cette réalisation était de développer une application capable de comparer différents itinéraires de transport entre plusieurs villes.", "Le projet reposait sur les principes de la programmation orientée objet et de la modélisation UML. Nous avons créé différentes classes représentant les villes, les connexions et les graphes.", "Le système devait prendre en compte plusieurs critères comme le prix, la durée ou les émissions de CO₂. Plusieurs versions du projet ont été développées afin d’ajouter progressivement des fonctionnalités plus avancées.", "Cette réalisation nous a permis de mettre en pratique les notions d’algorithmique, de graphes et de programmation Java."],
+    "work": ["Développement d’une application de comparaison d’itinéraires de transport entre plusieurs villes.", "Création de classes représentant les villes, les connexions et les graphes.", "Prise en compte du prix, de la durée et des émissions de CO₂.", "Évolution progressive des fonctionnalités du projet."],
+    "skills": ["Programmation orientée objet en Java", "UML", "Manipulation de graphes", "Développement d’algorithmes", "Structures de données"],
+    "soft": ["Logique", "Esprit d’équipe", "Persévérance"],
+    "other": ["Résolution de problèmes", "Analyse de besoins", "Travail collaboratif"]
+  },
+  "sae-2-05": {
+    "category": "SAÉ 2.05 — BUT Informatique",
+    "title": "Gestion de projet — AudioLearn",
+    "presentation": ["Cette réalisation avait pour objectif de découvrir les différentes étapes de la gestion de projet à travers la création d’une application mobile innovante.", "Notre équipe a imaginé AudioLearn, une application combinant livres audio, apprentissage des langues et intelligence artificielle.", "Nous avons défini le concept du produit, identifié le public cible et étudié la concurrence présente sur le marché. Nous avons également élaboré une stratégie commerciale, construit un modèle économique et réalisé une étude de faisabilité.", "Le projet nous a permis de comprendre les différentes dimensions d’un projet numérique, depuis l’idée initiale jusqu’à sa présentation auprès d’un public.", "J’occupais le rôle de chargé de communication au sein de l’équipe."],
+    "work": ["Définition du concept du produit et identification du public cible.", "Étude de la concurrence présente sur le marché.", "Élaboration d’une stratégie commerciale, d’un modèle économique et d’une étude de faisabilité.", "Communication au sein de l’équipe."],
+    "skills": ["Gestion et organisation d’un projet numérique", "Analyse des besoins des utilisateurs", "Réalisation de maquettes et supports de présentation", "Étude de marché dans le domaine du numérique", "Utilisation d’outils collaboratifs de gestion de projet"],
+    "soft": ["Créativité", "Esprit d’initiative", "Sens des responsabilités"],
+    "other": ["Communication", "Gestion du temps", "Travail en équipe", "Présentation d’idées"]
+  },
+  "sae-2-06": {
+    "category": "SAÉ 2.06 — BUT Informatique",
+    "title": "Travail en équipe — AudioLearn",
+    "presentation": ["Cette réalisation était consacrée au travail en équipe et à la communication autour d’un projet informatique.", "À travers la présentation du projet AudioLearn, nous avons appris à préparer une soutenance orale structurée et à présenter efficacement notre travail devant un public.", "Chaque membre du groupe avait un rôle précis afin de contribuer à la réussite de la présentation.", "Nous avons conçu un diaporama mettant en valeur les fonctionnalités principales de l’application, notamment les livres audio, la traduction linguistique et l’intelligence artificielle.", "Cette réalisation nous a permis de développer nos compétences de communication et de collaboration tout en valorisant le travail réalisé durant le projet de gestion."],
+    "work": ["Préparation d’une soutenance orale structurée.", "Présentation du projet AudioLearn devant un public.", "Conception d’un diaporama valorisant les fonctionnalités principales de l’application.", "Répartition des rôles au sein du groupe."],
+    "skills": ["Création de supports numériques de présentation", "Présentation d’un projet informatique", "Valorisation d’un produit numérique", "Utilisation d’outils bureautiques et de présentation", "Communication autour d’un projet technologique"],
+    "soft": ["Esprit d’équipe", "Confiance en soi", "Écoute active"],
+    "other": ["Expression orale", "Argumentation", "Gestion du stress", "Communication professionnelle"]
+  },
+  "gestion-inscriptions": {
+    "category": "Licence Professionnelle",
+    "title": "Application de gestion des inscriptions",
+    "presentation": ["Projet réalisé en Licence Professionnelle en Informatique.", "Il s’agit d’une application de gestion des inscriptions."],
+    "skills": ["Java", "JavaFX", "MySQL", "JDBC"]
+  },
+  "reseau-wds-pxe": {
+    "category": "Licence Professionnelle",
+    "title": "Mise en place d’un réseau WDS / PXE",
+    "presentation": ["Ce projet portait sur la mise en place d’un environnement WDS / PXE pour le déploiement Windows par le réseau."],
+    "work": ["Mise en place d’un environnement WDS / PXE.", "Utilisation de DHCP.", "Démarrage d’une machine depuis le réseau.", "Configuration du démarrage réseau depuis le BIOS / UEFI.", "Déploiement Windows par le réseau."],
+    "skills": ["WDS", "PXE", "DHCP"]
+  },
+  "securite-wifi-kali": {
+    "category": "Licence Professionnelle",
+    "title": "Test de sécurité d’un point d’accès Wi-Fi avec Kali Linux",
+    "presentation": ["Projet réalisé avec Kali Linux autour de la sécurité réseau et du test de sécurité d’un point d’accès Wi-Fi."],
+    "work": ["Test de sécurité d’un point d’accès Wi-Fi.", "Utilisation de commandes et d’outils de test d’intrusion.", "Travail autour de la sécurité réseau."],
+    "skills": ["Kali Linux", "Test d’intrusion", "Sécurité réseau"]
+  }
+}

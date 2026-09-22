@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Réseaux & systèmes",
+    "items": ["Réseaux informatiques", "Linux", "Kali Linux — Pentest", "Windows Server", "WDS / PXE", "VMware ESXi", "VLAN", "DHCP / DNS", "Active Directory"]
+  },
+  {
+    "category": "Bases de données",
+    "items": ["MySQL", "SQL Server", "SQL", "PostgreSQL", "JDBC", "UML", "MERISE"]
+  },
+  {
+    "category": "Développement",
+    "items": ["Java / JavaFX", "Java EE (en cours)", "PHP", "JavaScript", "HTML / CSS", "WINDEV / WEBDEV", "WINDEV Mobile"]
+  },
+  {
+    "category": "Outils",
+    "items": ["Git / GitLab", "GanttProject", "Microsoft Office"]
+  }
+]
