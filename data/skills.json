@@ -9,10 +9,10 @@
   },
   {
     "category": "Développement",
-    "items": ["Java / JavaFX", "Java EE (en cours)", "PHP", "JavaScript", "HTML / CSS", "WINDEV / WEBDEV", "WINDEV Mobile"]
+    "items": ["Java / JavaFX", "Java EE (en cours)", "PHP", "JavaScript", "HTML / CSS", "WINDEV / WEBDEV", "WINDEV Mobile","Python","C","C++"]
   },
   {
     "category": "Outils",
-    "items": ["Git / GitLab", "GanttProject", "Microsoft Office"]
+    "items": ["Git / GitLab", "GanttProject", "Microsoft Office","Docker", "VMware ESXi"]
   }
 ]
