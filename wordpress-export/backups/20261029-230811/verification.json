@@ -1,0 +1,48 @@
+{
+  "network_requests": false,
+  "published": false,
+  "project_count": 8,
+  "project_links_verified": true,
+  "project_slugs": [
+    "sae-2-03",
+    "sae-2-04",
+    "sae-2-02",
+    "sae-2-05",
+    "sae-2-06",
+    "gestion-inscriptions",
+    "reseau-wds-pxe",
+    "securite-wifi-kali"
+  ],
+  "anchors": [
+    "accueil",
+    "a-propos",
+    "parcours",
+    "competences",
+    "projets",
+    "interets",
+    "cv",
+    "contact"
+  ],
+  "destination_count": 8,
+  "image_count": 8,
+  "image_urls": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Servers_in_a_Rack.jpg/960px-Servers_in_a_Rack.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/2/24/Database_schema_of_PHP_suckless-conference.png",
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Dijkstra_algorithm_example_2.svg/960px-Dijkstra_algorithm_example_2.svg.png",
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Blue_and_Green_Minimal_Lines_Gradient_Team_Meeting_Agenda_Presentation_%281%29.jpg/960px-Blue_and_Green_Minimal_Lines_Gradient_Team_Meeting_Agenda_Presentation_%281%29.jpg",
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/A%26I_Presentation_to_Brisbane_Members%27_Meeting_Spinal_Life_Australia_Logan_Rd_Buranda_L1100914.jpg/960px-A%26I_Presentation_to_Brisbane_Members%27_Meeting_Spinal_Life_Australia_Logan_Rd_Buranda_L1100914.jpg",
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Computer%2C_server_room%2C_engineer_Fortepan_76098.jpg/960px-Computer%2C_server_room%2C_engineer_Fortepan_76098.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/e/e7/LTSP_boot.jpg",
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Openwrt-luci-firewall.png/960px-Openwrt-luci-firewall.png"
+  ],
+  "generated_project_pages": [
+    "projects/sae-2-03.html",
+    "projects/sae-2-04.html",
+    "projects/sae-2-02.html",
+    "projects/sae-2-05.html",
+    "projects/sae-2-06.html",
+    "projects/gestion-inscriptions.html",
+    "projects/reseau-wds-pxe.html",
+    "projects/securite-wifi-kali.html"
+  ]
+}

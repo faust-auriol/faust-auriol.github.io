@@ -1,0 +1,150 @@
+{
+  "id": 27,
+  "date": "2026-10-29T21:16:00",
+  "date_gmt": "2026-10-29T20:16:00",
+  "guid": {
+    "rendered": "https://portfolioauriol.wordpress.com/?page_id=27",
+    "raw": "https://portfolioauriol.wordpress.com/?page_id=27"
+  },
+  "modified": "2026-10-29T21:16:00",
+  "modified_gmt": "2026-10-29T20:16:00",
+  "password": "",
+  "slug": "mise-en-place-dun-reseau-wds-pxe",
+  "status": "publish",
+  "type": "page",
+  "link": "https://portfolioauriol.wordpress.com/mise-en-place-dun-reseau-wds-pxe/",
+  "title": {
+    "raw": "Mise en place d’un réseau WDS / PXE",
+    "rendered": "Mise en place d’un réseau WDS /&nbsp;PXE"
+  },
+  "content": {
+    "raw": "<p><strong>Licence Professionnelle</strong></p>\n<h2>Présentation du projet</h2>\n<p>Ce projet portait sur la mise en place d’un environnement WDS / PXE pour le déploiement Windows par le réseau.</p>\n<h2>Travaux réalisés</h2><ul>\n<li>Mise en place d’un environnement WDS / PXE.</li>\n<li>Utilisation de DHCP.</li>\n<li>Démarrage d’une machine depuis le réseau.</li>\n<li>Configuration du démarrage réseau depuis le BIOS / UEFI.</li>\n<li>Déploiement Windows par le réseau.</li>\n</ul>\n<h2>Compétences et technologies</h2><ul>\n<li>WDS</li>\n<li>PXE</li>\n<li>DHCP</li>\n</ul>",
+    "rendered": "<p><strong>Licence Professionnelle</strong></p>\n<h2>Présentation du projet</h2>\n<p>Ce projet portait sur la mise en place d’un environnement WDS / PXE pour le déploiement Windows par le réseau.</p>\n<h2>Travaux réalisés</h2>\n<ul>\n<li>Mise en place d’un environnement WDS / PXE.</li>\n<li>Utilisation de DHCP.</li>\n<li>Démarrage d’une machine depuis le réseau.</li>\n<li>Configuration du démarrage réseau depuis le BIOS / UEFI.</li>\n<li>Déploiement Windows par le réseau.</li>\n</ul>\n<h2>Compétences et technologies</h2>\n<ul>\n<li>WDS</li>\n<li>PXE</li>\n<li>DHCP</li>\n</ul>\n",
+    "protected": false,
+    "block_version": 0
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "<p>Licence Professionnelle Présentation du projet Ce projet portait sur la mise en place d’un environnement WDS / PXE pour le déploiement Windows par le réseau. Travaux réalisés Mise en place d’un environnement WDS / PXE. Utilisation de DHCP. Démarrage d’une machine depuis le réseau. Configuration du démarrage réseau depuis le BIOS / UEFI. Déploiement Windows [&hellip;]</p>\n",
+    "protected": false
+  },
+  "author": 286095852,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "advanced_seo_description": "",
+    "jetpack_seo_html_title": "",
+    "jetpack_seo_noindex": false,
+    "jetpack_seo_schema_type": "",
+    "_coblocks_attr": "",
+    "_coblocks_dimensions": "",
+    "_coblocks_responsive_height": "",
+    "_coblocks_accordion_ie_support": "",
+    "jetpack_post_was_ever_published": false,
+    "reader_suggested_tags": "",
+    "_wpcom_ai_launchpad_about_page": false,
+    "_wpcom_ai_launchpad_gallery_page": false,
+    "_wpcom_ai_launchpad_contact_page": false,
+    "_wpcom_ai_launchpad_events_page": false,
+    "_wpcom_ai_launchpad_video_page": false,
+    "_wpcom_ai_launchpad_portfolio_piece": false,
+    "_jetpack_hide_featured_image": false,
+    "_jetpack_featured_image_duplicate_dismissed": 0,
+    "footnotes": ""
+  },
+  "permalink_template": "https://portfolioauriol.wordpress.com/%pagename%/",
+  "generated_slug": "mise-en-place-dun-reseau-wds-pxe",
+  "class_list": [
+    "post-27",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "jetpack_shortlink": "https://wp.me/PhtNsM-r",
+  "jetpack_sharing_enabled": true,
+  "jetpack_likes_enabled": true,
+  "jetpack-related-posts": [],
+  "_links": {
+    "self": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/27"
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/users/286095852"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/comments?post=27"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/27/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 35,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/27/revisions/35"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/media?parent=27"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/27"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/27"
+      }
+    ],
+    "wp:action-set-homepage": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/27"
+      }
+    ],
+    "wp:action-set-posts-page": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/27"
+      }
+    ],
+    "wp:action-trash": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/27"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

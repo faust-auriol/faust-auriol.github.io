@@ -1,0 +1,9 @@
+/* Optional fallback for a narrow or vertical Read More link in Assembler templates. */
+.wp-block-post-excerpt__more-text,
+.wp-block-post-excerpt__more-link,
+.wp-block-read-more {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  writing-mode: horizontal-tb;
+}

@@ -1,0 +1,150 @@
+{
+  "id": 21,
+  "date": "2026-10-29T21:15:46",
+  "date_gmt": "2026-10-29T20:15:46",
+  "guid": {
+    "rendered": "https://portfolioauriol.wordpress.com/?page_id=21",
+    "raw": "https://portfolioauriol.wordpress.com/?page_id=21"
+  },
+  "modified": "2026-10-29T21:15:46",
+  "modified_gmt": "2026-10-29T20:15:46",
+  "password": "",
+  "slug": "installation-et-configuration-dune-machine-virtuelle",
+  "status": "publish",
+  "type": "page",
+  "link": "https://portfolioauriol.wordpress.com/installation-et-configuration-dune-machine-virtuelle/",
+  "title": {
+    "raw": "Installation et configuration d’une machine virtuelle",
+    "rendered": "Installation et configuration d’une machine&nbsp;virtuelle"
+  },
+  "content": {
+    "raw": "<p><strong>SAÉ 2.03 — BUT Informatique</strong></p>\n\n      <section class=\"project-hero\">\n        <a class=\"project-back-link\" href=\"../index.html#projets\">← Retour aux projets</a>\n        <p class=\"eyebrow\">SAÉ 2.03 — BUT Informatique</p>\n        <h1>Installation et configuration d’une <span>machine virtuelle.</span></h1>\n      </section>\n\n      <section class=\"project-section project-overview\">\n        <div class=\"project-section-heading\"><p class=\"section-label\">01 — Contexte</p><h2>Présentation du <em>projet.</em></h2></div>\n        <p class=\"project-lead\">Cette SAÉ avait pour objectif d’installer et configurer des services réseau permettant de développer et de déployer des applications communicantes. Nous avons commencé par préparer une machine virtuelle Debian et effectuer sa pré-configuration.</p>\n        <p>Le projet nous a permis de découvrir l’administration système sous Linux ainsi que les bases de la virtualisation. Nous avons appris à utiliser le balisage léger avec Markdown pour produire une documentation technique. Une partie importante du projet concernait Git et le travail collaboratif à travers un gestionnaire de versions. Nous avons également étudié les protocoles réseau utilisés par Git puis installé Forgejo afin de comprendre le fonctionnement des plateformes de développement collaboratif.</p>\n      </section>\n\n      <section class=\"project-section project-work-section\">\n        <div class=\"project-section-heading\"><p class=\"section-label\">02 — Réalisation</p><h2>Objectifs &amp; travail <em>réalisé.</em></h2></div>\n        <ul class=\"project-checklist\">\n          <li>Préparation d’une machine virtuelle et installation d’un système d’exploitation.</li>\n          <li>Configuration d’un environnement Linux Debian.</li>\n          <li>Utilisation du balisage Markdown.</li>\n          <li>Utilisation de Git et gestion de versions.</li>\n          <li>Installation et configuration de Forgejo.</li>\n          <li>Compréhension des protocoles réseau associés aux services collaboratifs.</li>\n        </ul>\n      </section>\n\n      <section class=\"project-section project-skills-section\">\n        <div class=\"project-section-heading\"><p class=\"section-label\">03 — Compétences</p><h2>Compétences <em>mobilisées.</em></h2></div>\n        <ul class=\"project-skill-tags\"><li>Virtualisation</li><li>Debian / Linux</li><li>Markdown</li><li>Git</li><li>Forgejo</li><li>Protocoles réseau</li></ul>\n      </section>\n\n      <section class=\"project-section project-human-section\">\n        <div class=\"project-qualities\">\n          <div><p class=\"section-label\">04 — Savoir-être</p><h2>Approche <em>personnelle.</em></h2><ul><li>Rigueur</li><li>Autonomie</li><li>Persévérance face aux problèmes techniques</li></ul></div>\n          <div><p class=\"section-label\">05 — Autres savoir-faire</p><h2>Pratiques <em>complémentaires.</em></h2><ul><li>Recherche documentaire</li><li>Organisation du travail</li><li>Rédaction technique</li><li>Travail en équipe</li></ul></div>\n        </div>\n      </section>\n\n      <section class=\"project-return-section\"><a class=\"button\" href=\"../index.html#projets\">← Retour aux projets</a></section>\n    ",
+    "rendered": "<p><strong>SAÉ 2.03 — BUT Informatique</strong></p>\n<section class=\"project-hero\">\n        <a class=\"project-back-link\" href=\"../index.html#projets\">← Retour aux projets</a></p>\n<p class=\"eyebrow\">SAÉ 2.03 — BUT Informatique</p>\n<h1>Installation et configuration d’une <span>machine virtuelle.</span></h1>\n</section>\n<section class=\"project-section project-overview\">\n<div class=\"project-section-heading\">\n<p class=\"section-label\">01 — Contexte</p>\n<h2>Présentation du <em>projet.</em></h2>\n</div>\n<p class=\"project-lead\">Cette SAÉ avait pour objectif d’installer et configurer des services réseau permettant de développer et de déployer des applications communicantes. Nous avons commencé par préparer une machine virtuelle Debian et effectuer sa pré-configuration.</p>\n<p>Le projet nous a permis de découvrir l’administration système sous Linux ainsi que les bases de la virtualisation. Nous avons appris à utiliser le balisage léger avec Markdown pour produire une documentation technique. Une partie importante du projet concernait Git et le travail collaboratif à travers un gestionnaire de versions. Nous avons également étudié les protocoles réseau utilisés par Git puis installé Forgejo afin de comprendre le fonctionnement des plateformes de développement collaboratif.</p>\n</section>\n<section class=\"project-section project-work-section\">\n<div class=\"project-section-heading\">\n<p class=\"section-label\">02 — Réalisation</p>\n<h2>Objectifs &amp; travail <em>réalisé.</em></h2>\n</div>\n<ul class=\"project-checklist\">\n<li>Préparation d’une machine virtuelle et installation d’un système d’exploitation.</li>\n<li>Configuration d’un environnement Linux Debian.</li>\n<li>Utilisation du balisage Markdown.</li>\n<li>Utilisation de Git et gestion de versions.</li>\n<li>Installation et configuration de Forgejo.</li>\n<li>Compréhension des protocoles réseau associés aux services collaboratifs.</li>\n</ul>\n</section>\n<section class=\"project-section project-skills-section\">\n<div class=\"project-section-heading\">\n<p class=\"section-label\">03 — Compétences</p>\n<h2>Compétences <em>mobilisées.</em></h2>\n</div>\n<ul class=\"project-skill-tags\">\n<li>Virtualisation</li>\n<li>Debian / Linux</li>\n<li>Markdown</li>\n<li>Git</li>\n<li>Forgejo</li>\n<li>Protocoles réseau</li>\n</ul>\n</section>\n<section class=\"project-section project-human-section\">\n<div class=\"project-qualities\">\n<div>\n<p class=\"section-label\">04 — Savoir-être</p>\n<h2>Approche <em>personnelle.</em></h2>\n<ul>\n<li>Rigueur</li>\n<li>Autonomie</li>\n<li>Persévérance face aux problèmes techniques</li>\n</ul>\n</div>\n<div>\n<p class=\"section-label\">05 — Autres savoir-faire</p>\n<h2>Pratiques <em>complémentaires.</em></h2>\n<ul>\n<li>Recherche documentaire</li>\n<li>Organisation du travail</li>\n<li>Rédaction technique</li>\n<li>Travail en équipe</li>\n</ul>\n</div></div>\n</section>\n<section class=\"project-return-section\"><a class=\"button\" href=\"../index.html#projets\">← Retour aux projets</a></section>\n",
+    "protected": false,
+    "block_version": 0
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "<p>SAÉ 2.03 — BUT Informatique ← Retour aux projets SAÉ 2.03 — BUT Informatique Installation et configuration d’une machine virtuelle. 01 — Contexte Présentation du projet. Cette SAÉ avait pour objectif d’installer et configurer des services réseau permettant de développer et de déployer des applications communicantes. Nous avons commencé par préparer une machine virtuelle Debian [&hellip;]</p>\n",
+    "protected": false
+  },
+  "author": 286095852,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "advanced_seo_description": "",
+    "jetpack_seo_html_title": "",
+    "jetpack_seo_noindex": false,
+    "jetpack_seo_schema_type": "",
+    "_coblocks_attr": "",
+    "_coblocks_dimensions": "",
+    "_coblocks_responsive_height": "",
+    "_coblocks_accordion_ie_support": "",
+    "jetpack_post_was_ever_published": false,
+    "reader_suggested_tags": "",
+    "_wpcom_ai_launchpad_about_page": false,
+    "_wpcom_ai_launchpad_gallery_page": false,
+    "_wpcom_ai_launchpad_contact_page": false,
+    "_wpcom_ai_launchpad_events_page": false,
+    "_wpcom_ai_launchpad_video_page": false,
+    "_wpcom_ai_launchpad_portfolio_piece": false,
+    "_jetpack_hide_featured_image": false,
+    "_jetpack_featured_image_duplicate_dismissed": 0,
+    "footnotes": ""
+  },
+  "permalink_template": "https://portfolioauriol.wordpress.com/%pagename%/",
+  "generated_slug": "installation-et-configuration-dune-machine-virtuelle",
+  "class_list": [
+    "post-21",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "jetpack_shortlink": "https://wp.me/PhtNsM-l",
+  "jetpack_sharing_enabled": true,
+  "jetpack_likes_enabled": true,
+  "jetpack-related-posts": [],
+  "_links": {
+    "self": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/21"
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/users/286095852"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/comments?post=21"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/21/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 29,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/21/revisions/29"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/media?parent=21"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/21"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/21"
+      }
+    ],
+    "wp:action-set-homepage": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/21"
+      }
+    ],
+    "wp:action-set-posts-page": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/21"
+      }
+    ],
+    "wp:action-trash": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/21"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

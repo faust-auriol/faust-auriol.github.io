@@ -24,20 +24,56 @@ function createTagList(items, className) {
   return list;
 }
 
+function createProjectIllustration(projectId, imageData) {
+  if (!imageData?.src) return null;
+
+  const figure = document.createElement('figure');
+  figure.className = 'project-illustration project-card-illustration';
+  const image = document.createElement('img');
+  image.src = imageData.src;
+  image.alt = imageData.alt;
+  image.width = 960;
+  image.height = 540;
+  image.loading = 'lazy';
+  image.addEventListener('error', () => {
+    const svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540"><rect width="960" height="540" fill="#071727"/><path d="M260 360h440M340 270h280M410 180h140" stroke="#39d6cf" stroke-width="18" stroke-linecap="round"/><circle cx="300" cy="360" r="24" fill="#39d6cf"/><circle cx="480" cy="270" r="24" fill="#39d6cf"/><circle cx="660" cy="360" r="24" fill="#39d6cf"/></svg>';
+    if (!image.dataset.fallbackApplied) {
+      image.dataset.fallbackApplied = 'true';
+      image.alt = 'Illustration de remplacement ; image source indisponible.';
+      image.src = `data:image/svg+xml,${encodeURIComponent(svg)}`;
+    }
+  }, { once: true });
+  figure.append(image);
+
+  const caption = document.createElement('figcaption');
+  caption.append('Illustration générique · ');
+  const source = document.createElement('a');
+  source.href = imageData.source;
+  source.target = '_blank';
+  source.rel = 'noreferrer';
+  source.textContent = `${imageData.artist}, ${imageData.license}`;
+  caption.append(source);
+  figure.append(caption);
+  figure.dataset.project = projectId;
+  return figure;
+}
+
 async function renderPortfolioData() {
   const skillsList = document.querySelector('#skills-list');
   const projectsList = document.querySelector('#projects-list');
   if (!skillsList || !projectsList) return;
 
   try {
-    const [skillsResponse, projectsResponse] = await Promise.all([
+    const [skillsResponse, projectsResponse, imagesResponse] = await Promise.all([
       fetch('data/skills.json'),
       fetch('data/projects.json'),
+      fetch('wordpress-export/project-images.json'),
     ]);
-    if (!skillsResponse.ok || !projectsResponse.ok) throw new Error('Données indisponibles');
+    if (!skillsResponse.ok || !projectsResponse.ok || !imagesResponse.ok) throw new Error('Données indisponibles');
 
     const skills = await skillsResponse.json();
     const projects = await projectsResponse.json();
+    const images = await imagesResponse.json();
     skills.forEach(({ category, items }) => {
       const card = document.createElement('article');
       card.className = 'skill-category';
@@ -50,6 +86,9 @@ async function renderPortfolioData() {
     projects.forEach(({ title, technologies, category, url, reference }, index) => {
       const card = document.createElement('article');
       card.className = 'project-card';
+      const projectId = url.split('/').pop().replace(/\.html$/, '');
+      const illustration = createProjectIllustration(projectId, images[projectId]);
+      if (illustration) card.append(illustration);
       const number = document.createElement('span');
       number.className = 'project-number';
       number.textContent = category || String(index + 1).padStart(2, '0');

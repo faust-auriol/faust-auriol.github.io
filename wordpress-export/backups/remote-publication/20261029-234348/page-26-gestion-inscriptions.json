@@ -1,0 +1,150 @@
+{
+  "id": 26,
+  "date": "2026-10-29T21:15:57",
+  "date_gmt": "2026-10-29T20:15:57",
+  "guid": {
+    "rendered": "https://portfolioauriol.wordpress.com/?page_id=26",
+    "raw": "https://portfolioauriol.wordpress.com/?page_id=26"
+  },
+  "modified": "2026-10-29T21:15:57",
+  "modified_gmt": "2026-10-29T20:15:57",
+  "password": "",
+  "slug": "application-de-gestion-des-inscriptions",
+  "status": "publish",
+  "type": "page",
+  "link": "https://portfolioauriol.wordpress.com/application-de-gestion-des-inscriptions/",
+  "title": {
+    "raw": "Application de gestion des inscriptions",
+    "rendered": "Application de gestion des&nbsp;inscriptions"
+  },
+  "content": {
+    "raw": "<p><strong>Licence Professionnelle</strong></p>\n<h2>Présentation du projet</h2>\n<p>Projet réalisé en Licence Professionnelle en Informatique.</p>\n<p>Il s’agit d’une application de gestion des inscriptions.</p>\n<h2>Compétences et technologies</h2><ul>\n<li>Java</li>\n<li>JavaFX</li>\n<li>MySQL</li>\n<li>JDBC</li>\n</ul>",
+    "rendered": "<p><strong>Licence Professionnelle</strong></p>\n<h2>Présentation du projet</h2>\n<p>Projet réalisé en Licence Professionnelle en Informatique.</p>\n<p>Il s’agit d’une application de gestion des inscriptions.</p>\n<h2>Compétences et technologies</h2>\n<ul>\n<li>Java</li>\n<li>JavaFX</li>\n<li>MySQL</li>\n<li>JDBC</li>\n</ul>\n",
+    "protected": false,
+    "block_version": 0
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "<p>Licence Professionnelle Présentation du projet Projet réalisé en Licence Professionnelle en Informatique. Il s’agit d’une application de gestion des inscriptions. Compétences et technologies Java JavaFX MySQL JDBC</p>\n",
+    "protected": false
+  },
+  "author": 286095852,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "advanced_seo_description": "",
+    "jetpack_seo_html_title": "",
+    "jetpack_seo_noindex": false,
+    "jetpack_seo_schema_type": "",
+    "_coblocks_attr": "",
+    "_coblocks_dimensions": "",
+    "_coblocks_responsive_height": "",
+    "_coblocks_accordion_ie_support": "",
+    "jetpack_post_was_ever_published": false,
+    "reader_suggested_tags": "",
+    "_wpcom_ai_launchpad_about_page": false,
+    "_wpcom_ai_launchpad_gallery_page": false,
+    "_wpcom_ai_launchpad_contact_page": false,
+    "_wpcom_ai_launchpad_events_page": false,
+    "_wpcom_ai_launchpad_video_page": false,
+    "_wpcom_ai_launchpad_portfolio_piece": false,
+    "_jetpack_hide_featured_image": false,
+    "_jetpack_featured_image_duplicate_dismissed": 0,
+    "footnotes": ""
+  },
+  "permalink_template": "https://portfolioauriol.wordpress.com/%pagename%/",
+  "generated_slug": "application-de-gestion-des-inscriptions",
+  "class_list": [
+    "post-26",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "jetpack_shortlink": "https://wp.me/PhtNsM-q",
+  "jetpack_sharing_enabled": true,
+  "jetpack_likes_enabled": true,
+  "jetpack-related-posts": [],
+  "_links": {
+    "self": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/26"
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/users/286095852"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/comments?post=26"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/26/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 34,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/26/revisions/34"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/media?parent=26"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/26"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/26"
+      }
+    ],
+    "wp:action-set-homepage": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/26"
+      }
+    ],
+    "wp:action-set-posts-page": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/26"
+      }
+    ],
+    "wp:action-trash": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/26"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

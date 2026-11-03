@@ -1,0 +1,150 @@
+{
+  "id": 23,
+  "date": "2026-10-29T21:15:51",
+  "date_gmt": "2026-10-29T20:15:51",
+  "guid": {
+    "rendered": "https://portfolioauriol.wordpress.com/?page_id=23",
+    "raw": "https://portfolioauriol.wordpress.com/?page_id=23"
+  },
+  "modified": "2026-10-29T21:15:51",
+  "modified_gmt": "2026-10-29T20:15:51",
+  "password": "",
+  "slug": "exploration-algorithmique",
+  "status": "publish",
+  "type": "page",
+  "link": "https://portfolioauriol.wordpress.com/exploration-algorithmique/",
+  "title": {
+    "raw": "Exploration algorithmique",
+    "rendered": "Exploration algorithmique"
+  },
+  "content": {
+    "raw": "<p><strong>SAÉ 2.02 — BUT Informatique</strong></p>\n<h2>Présentation du projet</h2>\n<p>L’objectif de cette réalisation était de développer une application capable de comparer différents itinéraires de transport entre plusieurs villes.</p>\n<p>Le projet reposait sur les principes de la programmation orientée objet et de la modélisation UML. Nous avons créé différentes classes représentant les villes, les connexions et les graphes.</p>\n<p>Le système devait prendre en compte plusieurs critères comme le prix, la durée ou les émissions de CO₂. Plusieurs versions du projet ont été développées afin d’ajouter progressivement des fonctionnalités plus avancées.</p>\n<p>Cette réalisation nous a permis de mettre en pratique les notions d’algorithmique, de graphes et de programmation Java.</p>\n<h2>Travaux réalisés</h2><ul>\n<li>Développement d’une application de comparaison d’itinéraires de transport entre plusieurs villes.</li>\n<li>Création de classes représentant les villes, les connexions et les graphes.</li>\n<li>Prise en compte du prix, de la durée et des émissions de CO₂.</li>\n<li>Évolution progressive des fonctionnalités du projet.</li>\n</ul>\n<h2>Compétences et technologies</h2><ul>\n<li>Programmation orientée objet en Java</li>\n<li>UML</li>\n<li>Manipulation de graphes</li>\n<li>Développement d’algorithmes</li>\n<li>Structures de données</li>\n</ul>\n<h2>Qualités mobilisées</h2><ul>\n<li>Logique</li>\n<li>Esprit d’équipe</li>\n<li>Persévérance</li>\n</ul>\n<h2>Autres compétences développées</h2><ul>\n<li>Résolution de problèmes</li>\n<li>Analyse de besoins</li>\n<li>Travail collaboratif</li>\n</ul>",
+    "rendered": "<p><strong>SAÉ 2.02 — BUT Informatique</strong></p>\n<h2>Présentation du projet</h2>\n<p>L’objectif de cette réalisation était de développer une application capable de comparer différents itinéraires de transport entre plusieurs villes.</p>\n<p>Le projet reposait sur les principes de la programmation orientée objet et de la modélisation UML. Nous avons créé différentes classes représentant les villes, les connexions et les graphes.</p>\n<p>Le système devait prendre en compte plusieurs critères comme le prix, la durée ou les émissions de CO₂. Plusieurs versions du projet ont été développées afin d’ajouter progressivement des fonctionnalités plus avancées.</p>\n<p>Cette réalisation nous a permis de mettre en pratique les notions d’algorithmique, de graphes et de programmation Java.</p>\n<h2>Travaux réalisés</h2>\n<ul>\n<li>Développement d’une application de comparaison d’itinéraires de transport entre plusieurs villes.</li>\n<li>Création de classes représentant les villes, les connexions et les graphes.</li>\n<li>Prise en compte du prix, de la durée et des émissions de CO₂.</li>\n<li>Évolution progressive des fonctionnalités du projet.</li>\n</ul>\n<h2>Compétences et technologies</h2>\n<ul>\n<li>Programmation orientée objet en Java</li>\n<li>UML</li>\n<li>Manipulation de graphes</li>\n<li>Développement d’algorithmes</li>\n<li>Structures de données</li>\n</ul>\n<h2>Qualités mobilisées</h2>\n<ul>\n<li>Logique</li>\n<li>Esprit d’équipe</li>\n<li>Persévérance</li>\n</ul>\n<h2>Autres compétences développées</h2>\n<ul>\n<li>Résolution de problèmes</li>\n<li>Analyse de besoins</li>\n<li>Travail collaboratif</li>\n</ul>\n",
+    "protected": false,
+    "block_version": 0
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "<p>SAÉ 2.02 — BUT Informatique Présentation du projet L’objectif de cette réalisation était de développer une application capable de comparer différents itinéraires de transport entre plusieurs villes. Le projet reposait sur les principes de la programmation orientée objet et de la modélisation UML. Nous avons créé différentes classes représentant les villes, les connexions et les [&hellip;]</p>\n",
+    "protected": false
+  },
+  "author": 286095852,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "advanced_seo_description": "",
+    "jetpack_seo_html_title": "",
+    "jetpack_seo_noindex": false,
+    "jetpack_seo_schema_type": "",
+    "_coblocks_attr": "",
+    "_coblocks_dimensions": "",
+    "_coblocks_responsive_height": "",
+    "_coblocks_accordion_ie_support": "",
+    "jetpack_post_was_ever_published": false,
+    "reader_suggested_tags": "",
+    "_wpcom_ai_launchpad_about_page": false,
+    "_wpcom_ai_launchpad_gallery_page": false,
+    "_wpcom_ai_launchpad_contact_page": false,
+    "_wpcom_ai_launchpad_events_page": false,
+    "_wpcom_ai_launchpad_video_page": false,
+    "_wpcom_ai_launchpad_portfolio_piece": false,
+    "_jetpack_hide_featured_image": false,
+    "_jetpack_featured_image_duplicate_dismissed": 0,
+    "footnotes": ""
+  },
+  "permalink_template": "https://portfolioauriol.wordpress.com/%pagename%/",
+  "generated_slug": "exploration-algorithmique",
+  "class_list": [
+    "post-23",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "jetpack_shortlink": "https://wp.me/PhtNsM-n",
+  "jetpack_sharing_enabled": true,
+  "jetpack_likes_enabled": true,
+  "jetpack-related-posts": [],
+  "_links": {
+    "self": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/23"
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/users/286095852"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/comments?post=23"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/23/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 31,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/23/revisions/31"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/media?parent=23"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/23"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/23"
+      }
+    ],
+    "wp:action-set-homepage": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/23"
+      }
+    ],
+    "wp:action-set-posts-page": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/23"
+      }
+    ],
+    "wp:action-trash": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/23"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

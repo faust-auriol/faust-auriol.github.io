@@ -1,0 +1,150 @@
+{
+  "id": 22,
+  "date": "2026-10-29T21:15:48",
+  "date_gmt": "2026-10-29T20:15:48",
+  "guid": {
+    "rendered": "https://portfolioauriol.wordpress.com/?page_id=22",
+    "raw": "https://portfolioauriol.wordpress.com/?page_id=22"
+  },
+  "modified": "2026-10-29T21:15:48",
+  "modified_gmt": "2026-10-29T20:15:48",
+  "password": "",
+  "slug": "exploitation-dune-base-de-donnees",
+  "status": "publish",
+  "type": "page",
+  "link": "https://portfolioauriol.wordpress.com/exploitation-dune-base-de-donnees/",
+  "title": {
+    "raw": "Exploitation d’une base de données",
+    "rendered": "Exploitation d’une base de&nbsp;données"
+  },
+  "content": {
+    "raw": "<p><strong>SAÉ 2.04 — BUT Informatique</strong></p>\n<h2>Présentation du projet</h2>\n<p>Cette SAÉ consistait à exploiter les données publiques de Parcoursup afin de les importer dans une base de données relationnelle puis de les analyser. Nous avons étudié la structure d’un fichier contenant plusieurs milliers d’enregistrements et plus d’une centaine de colonnes.</p>\n<p>Après l’importation des données, nous avons réalisé différentes requêtes SQL permettant d’obtenir des informations pertinentes sur les formations et les candidats. Une partie statistique était également demandée afin de confirmer ou d’infirmer plusieurs affirmations à partir des données disponibles.</p>\n<p>Cette réalisation nous a permis de comprendre l’importance de l’organisation des données, de leur qualité ainsi que leur utilisation dans l’aide à la décision.</p>\n<h2>Travaux réalisés</h2><ul>\n<li>Importation de données publiques de Parcoursup dans une base de données relationnelle.</li>\n<li>Étude de la structure d’un fichier comportant plusieurs milliers d’enregistrements et plus d’une centaine de colonnes.</li>\n<li>Réalisation de requêtes SQL sur les formations et les candidats.</li>\n<li>Analyse statistique à partir des données disponibles.</li>\n</ul>\n<h2>Compétences et technologies</h2><ul>\n<li>Conception et exploitation d’une base de données relationnelle</li>\n<li>SQL</li>\n<li>Importation et nettoyage de données</li>\n<li>Analyse statistique de données</li>\n<li>Visualisation et interprétation de résultats</li>\n</ul>\n<h2>Qualités mobilisées</h2><ul>\n<li>Esprit d’analyse</li>\n<li>Rigueur méthodologique</li>\n<li>Esprit critique</li>\n</ul>\n<h2>Autres compétences développées</h2><ul>\n<li>Analyse de résultats</li>\n<li>Synthèse d’informations</li>\n<li>Communication écrite</li>\n</ul>",
+    "rendered": "<p><strong>SAÉ 2.04 — BUT Informatique</strong></p>\n<h2>Présentation du projet</h2>\n<p>Cette SAÉ consistait à exploiter les données publiques de Parcoursup afin de les importer dans une base de données relationnelle puis de les analyser. Nous avons étudié la structure d’un fichier contenant plusieurs milliers d’enregistrements et plus d’une centaine de colonnes.</p>\n<p>Après l’importation des données, nous avons réalisé différentes requêtes SQL permettant d’obtenir des informations pertinentes sur les formations et les candidats. Une partie statistique était également demandée afin de confirmer ou d’infirmer plusieurs affirmations à partir des données disponibles.</p>\n<p>Cette réalisation nous a permis de comprendre l’importance de l’organisation des données, de leur qualité ainsi que leur utilisation dans l’aide à la décision.</p>\n<h2>Travaux réalisés</h2>\n<ul>\n<li>Importation de données publiques de Parcoursup dans une base de données relationnelle.</li>\n<li>Étude de la structure d’un fichier comportant plusieurs milliers d’enregistrements et plus d’une centaine de colonnes.</li>\n<li>Réalisation de requêtes SQL sur les formations et les candidats.</li>\n<li>Analyse statistique à partir des données disponibles.</li>\n</ul>\n<h2>Compétences et technologies</h2>\n<ul>\n<li>Conception et exploitation d’une base de données relationnelle</li>\n<li>SQL</li>\n<li>Importation et nettoyage de données</li>\n<li>Analyse statistique de données</li>\n<li>Visualisation et interprétation de résultats</li>\n</ul>\n<h2>Qualités mobilisées</h2>\n<ul>\n<li>Esprit d’analyse</li>\n<li>Rigueur méthodologique</li>\n<li>Esprit critique</li>\n</ul>\n<h2>Autres compétences développées</h2>\n<ul>\n<li>Analyse de résultats</li>\n<li>Synthèse d’informations</li>\n<li>Communication écrite</li>\n</ul>\n",
+    "protected": false,
+    "block_version": 0
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "<p>SAÉ 2.04 — BUT Informatique Présentation du projet Cette SAÉ consistait à exploiter les données publiques de Parcoursup afin de les importer dans une base de données relationnelle puis de les analyser. Nous avons étudié la structure d’un fichier contenant plusieurs milliers d’enregistrements et plus d’une centaine de colonnes. Après l’importation des données, nous avons [&hellip;]</p>\n",
+    "protected": false
+  },
+  "author": 286095852,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "advanced_seo_description": "",
+    "jetpack_seo_html_title": "",
+    "jetpack_seo_noindex": false,
+    "jetpack_seo_schema_type": "",
+    "_coblocks_attr": "",
+    "_coblocks_dimensions": "",
+    "_coblocks_responsive_height": "",
+    "_coblocks_accordion_ie_support": "",
+    "jetpack_post_was_ever_published": false,
+    "reader_suggested_tags": "",
+    "_wpcom_ai_launchpad_about_page": false,
+    "_wpcom_ai_launchpad_gallery_page": false,
+    "_wpcom_ai_launchpad_contact_page": false,
+    "_wpcom_ai_launchpad_events_page": false,
+    "_wpcom_ai_launchpad_video_page": false,
+    "_wpcom_ai_launchpad_portfolio_piece": false,
+    "_jetpack_hide_featured_image": false,
+    "_jetpack_featured_image_duplicate_dismissed": 0,
+    "footnotes": ""
+  },
+  "permalink_template": "https://portfolioauriol.wordpress.com/%pagename%/",
+  "generated_slug": "exploitation-dune-base-de-donnees",
+  "class_list": [
+    "post-22",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "jetpack_shortlink": "https://wp.me/PhtNsM-m",
+  "jetpack_sharing_enabled": true,
+  "jetpack_likes_enabled": true,
+  "jetpack-related-posts": [],
+  "_links": {
+    "self": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/22"
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/users/286095852"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/comments?post=22"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/22/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 30,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/22/revisions/30"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/media?parent=22"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/22"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/22"
+      }
+    ],
+    "wp:action-set-homepage": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/22"
+      }
+    ],
+    "wp:action-set-posts-page": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/22"
+      }
+    ],
+    "wp:action-trash": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/22"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

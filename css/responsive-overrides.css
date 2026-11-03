@@ -1,0 +1,201 @@
+img,
+picture,
+video {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+.project-card-illustration {
+  margin: 0 0 .85rem;
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.project-card-illustration img {
+  aspect-ratio: 16 / 9;
+  background: var(--navy, #071727);
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-card-illustration figcaption,
+.project-illustration figcaption {
+  color: var(--muted, #627487);
+  font-size: .72rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  padding-top: .5rem;
+}
+
+.project-image-fallback {
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  background: var(--navy, #071727);
+  color: var(--white, #fff);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navigation {
+  gap: 1rem;
+}
+
+.menu a,
+.button,
+.menu-toggle {
+  min-height: 44px;
+}
+
+.project-detail-page main {
+  margin-inline: auto;
+  max-width: var(--page, 76rem);
+  width: 100%;
+}
+
+.project-detail-page :is(h1, h2, h3) {
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+.project-detail-page .project-hero h1 {
+  font-size: 3.75rem;
+  line-height: 1.05;
+  max-width: 18ch;
+}
+
+.project-detail-page .project-section,
+.project-detail-page .project-hero,
+.project-detail-page .project-return-section {
+  padding-inline: clamp(1rem, 4vw, 2rem);
+}
+
+.project-detail-page .project-illustration {
+  background: var(--navy, #071727);
+  border: 1px solid rgba(57, 214, 207, .35);
+  border-radius: .6rem;
+  margin: 0 0 2rem;
+  max-width: 100%;
+  overflow: clip;
+  width: 100%;
+}
+
+.project-detail-page .project-illustration img {
+  display: block;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-detail-page .project-illustration figcaption {
+  color: var(--muted, #627487);
+  font-size: .78rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  padding: .65rem .8rem;
+}
+
+.project-detail-page .project-illustration a {
+  text-underline-offset: .15em;
+}
+
+.project-detail-page .project-skill-tags li,
+.project-detail-page .project-checklist li {
+  overflow-wrap: anywhere;
+}
+
+.project-detail-page .project-return-section .button {
+  justify-content: center;
+  max-width: 100%;
+  white-space: normal;
+}
+
+@media (max-width: 65rem) {
+  .navigation {
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 72%;
+  }
+
+  .project-detail-page .project-hero h1 {
+    font-size: 3rem;
+  }
+
+  .project-detail-page .project-section {
+    padding-block: 4rem;
+  }
+
+  .project-detail-page .project-qualities {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .navigation {
+    align-items: center;
+  }
+
+  .menu {
+    max-width: none;
+  }
+
+  .project-detail-page main {
+    padding-inline: 1rem;
+  }
+
+  .project-detail-page .project-hero {
+    padding-block: 3rem;
+  }
+
+  .project-detail-page .project-hero h1 {
+    font-size: 2.25rem;
+    line-height: 1.12;
+    max-width: 100%;
+  }
+
+  .project-detail-page .project-back-link {
+    margin-bottom: 2rem;
+  }
+
+  .project-detail-page .project-section {
+    padding-block: 3rem;
+    padding-inline: 1rem;
+  }
+
+  .project-detail-page .project-section-heading {
+    margin-bottom: 1.75rem;
+  }
+
+  .project-detail-page .project-section-heading h2 {
+    font-size: 1.75rem;
+    line-height: 1.15;
+  }
+
+  .project-detail-page .project-qualities {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-page .project-illustration {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-detail-page .project-return-section {
+    padding-block: 2rem;
+    padding-inline: 1rem;
+  }
+}

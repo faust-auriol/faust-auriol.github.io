@@ -1,0 +1,150 @@
+{
+  "id": 28,
+  "date": "2026-10-29T21:16:02",
+  "date_gmt": "2026-10-29T20:16:02",
+  "guid": {
+    "rendered": "https://portfolioauriol.wordpress.com/?page_id=28",
+    "raw": "https://portfolioauriol.wordpress.com/?page_id=28"
+  },
+  "modified": "2026-10-29T21:16:02",
+  "modified_gmt": "2026-10-29T20:16:02",
+  "password": "",
+  "slug": "test-de-securite-dun-point-dacces-wi-fi-avec-kali-linux",
+  "status": "publish",
+  "type": "page",
+  "link": "https://portfolioauriol.wordpress.com/test-de-securite-dun-point-dacces-wi-fi-avec-kali-linux/",
+  "title": {
+    "raw": "Test de sécurité d’un point d’accès Wi-Fi avec Kali Linux",
+    "rendered": "Test de sécurité d’un point d’accès Wi-Fi avec Kali&nbsp;Linux"
+  },
+  "content": {
+    "raw": "<p><strong>Licence Professionnelle</strong></p>\n<h2>Présentation du projet</h2>\n<p>Projet réalisé avec Kali Linux autour de la sécurité réseau et du test de sécurité d’un point d’accès Wi-Fi.</p>\n<h2>Travaux réalisés</h2><ul>\n<li>Test de sécurité d’un point d’accès Wi-Fi.</li>\n<li>Utilisation de commandes et d’outils de test d’intrusion.</li>\n<li>Travail autour de la sécurité réseau.</li>\n</ul>\n<h2>Compétences et technologies</h2><ul>\n<li>Kali Linux</li>\n<li>Test d’intrusion</li>\n<li>Sécurité réseau</li>\n</ul>",
+    "rendered": "<p><strong>Licence Professionnelle</strong></p>\n<h2>Présentation du projet</h2>\n<p>Projet réalisé avec Kali Linux autour de la sécurité réseau et du test de sécurité d’un point d’accès Wi-Fi.</p>\n<h2>Travaux réalisés</h2>\n<ul>\n<li>Test de sécurité d’un point d’accès Wi-Fi.</li>\n<li>Utilisation de commandes et d’outils de test d’intrusion.</li>\n<li>Travail autour de la sécurité réseau.</li>\n</ul>\n<h2>Compétences et technologies</h2>\n<ul>\n<li>Kali Linux</li>\n<li>Test d’intrusion</li>\n<li>Sécurité réseau</li>\n</ul>\n",
+    "protected": false,
+    "block_version": 0
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "<p>Licence Professionnelle Présentation du projet Projet réalisé avec Kali Linux autour de la sécurité réseau et du test de sécurité d’un point d’accès Wi-Fi. Travaux réalisés Test de sécurité d’un point d’accès Wi-Fi. Utilisation de commandes et d’outils de test d’intrusion. Travail autour de la sécurité réseau. Compétences et technologies Kali Linux Test d’intrusion Sécurité [&hellip;]</p>\n",
+    "protected": false
+  },
+  "author": 286095852,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "advanced_seo_description": "",
+    "jetpack_seo_html_title": "",
+    "jetpack_seo_noindex": false,
+    "jetpack_seo_schema_type": "",
+    "_coblocks_attr": "",
+    "_coblocks_dimensions": "",
+    "_coblocks_responsive_height": "",
+    "_coblocks_accordion_ie_support": "",
+    "jetpack_post_was_ever_published": false,
+    "reader_suggested_tags": "",
+    "_wpcom_ai_launchpad_about_page": false,
+    "_wpcom_ai_launchpad_gallery_page": false,
+    "_wpcom_ai_launchpad_contact_page": false,
+    "_wpcom_ai_launchpad_events_page": false,
+    "_wpcom_ai_launchpad_video_page": false,
+    "_wpcom_ai_launchpad_portfolio_piece": false,
+    "_jetpack_hide_featured_image": false,
+    "_jetpack_featured_image_duplicate_dismissed": 0,
+    "footnotes": ""
+  },
+  "permalink_template": "https://portfolioauriol.wordpress.com/%pagename%/",
+  "generated_slug": "test-de-securite-dun-point-dacces-wi-fi-avec-kali-linux",
+  "class_list": [
+    "post-28",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "jetpack_shortlink": "https://wp.me/PhtNsM-s",
+  "jetpack_sharing_enabled": true,
+  "jetpack_likes_enabled": true,
+  "jetpack-related-posts": [],
+  "_links": {
+    "self": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/28"
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/users/286095852"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/comments?post=28"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/28/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 36,
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/28/revisions/36"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/media?parent=28"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/28"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/28"
+      }
+    ],
+    "wp:action-set-homepage": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/28"
+      }
+    ],
+    "wp:action-set-posts-page": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/28"
+      }
+    ],
+    "wp:action-trash": [
+      {
+        "href": "https://public-api.wordpress.com/wp/v2/sites/portfolioauriol.wordpress.com/pages/28"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

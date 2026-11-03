@@ -1,0 +1,66 @@
+{
+  "sae-2-03": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Servers_in_a_Rack.jpg/960px-Servers_in_a_Rack.jpg",
+    "alt": "Baie informatique avec plusieurs serveurs en rack, illustration du contexte de virtualisation et d’administration système.",
+    "source": "https://commons.wikimedia.org/wiki/File:Servers_in_a_Rack.jpg",
+    "artist": "Abigor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "sae-2-04": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/Database_schema_of_PHP_suckless-conference.png",
+    "alt": "Schéma de tables et relations de base de données, illustration générique de la modélisation relationnelle.",
+    "source": "https://commons.wikimedia.org/wiki/File:Database_schema_of_PHP_suckless-conference.png",
+    "artist": "Valerio Bozzolan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "sae-2-02": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Dijkstra_algorithm_example_2.svg/960px-Dijkstra_algorithm_example_2.svg.png",
+    "alt": "Graphe pondéré illustrant un exemple de l’algorithme de Dijkstra.",
+    "source": "https://commons.wikimedia.org/wiki/File:Dijkstra_algorithm_example_2.svg",
+    "artist": "Webaware",
+    "license": "Domaine public",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Dijkstra_algorithm_example_2.svg"
+  },
+  "sae-2-05": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Blue_and_Green_Minimal_Lines_Gradient_Team_Meeting_Agenda_Presentation_%281%29.jpg/960px-Blue_and_Green_Minimal_Lines_Gradient_Team_Meeting_Agenda_Presentation_%281%29.jpg",
+    "alt": "Visuel générique de support de réunion bleu et vert, illustration de la préparation du projet AudioLearn.",
+    "source": "https://commons.wikimedia.org/wiki/File:Blue_and_Green_Minimal_Lines_Gradient_Team_Meeting_Agenda_Presentation_(1).jpg",
+    "artist": "Khalimov.0402",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "sae-2-06": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/A%26I_Presentation_to_Brisbane_Members%27_Meeting_Spinal_Life_Australia_Logan_Rd_Buranda_L1100914.jpg/960px-A%26I_Presentation_to_Brisbane_Members%27_Meeting_Spinal_Life_Australia_Logan_Rd_Buranda_L1100914.jpg",
+    "alt": "Réunion générique avec présentation devant un groupe, illustration du travail d’équipe et de la communication.",
+    "source": "https://commons.wikimedia.org/wiki/File:A%26I_Presentation_to_Brisbane_Members%27_Meeting_Spinal_Life_Australia_Logan_Rd_Buranda_L1100914.jpg",
+    "artist": "John Robert McPherson",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "gestion-inscriptions": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Computer%2C_server_room%2C_engineer_Fortepan_76098.jpg/960px-Computer%2C_server_room%2C_engineer_Fortepan_76098.jpg",
+    "alt": "Personne travaillant sur un ordinateur dans une salle informatique, illustration générique d’un contexte applicatif.",
+    "source": "https://commons.wikimedia.org/wiki/File:Computer,_server_room,_engineer_Fortepan_76098.jpg",
+    "artist": "Fortepan, photo ID 76098, donor Erdei Katalin",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "reseau-wds-pxe": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/LTSP_boot.jpg",
+    "alt": "Écran de démarrage réseau LTSP, illustration générique du démarrage et du déploiement par le réseau.",
+    "source": "https://commons.wikimedia.org/wiki/File:LTSP_boot.jpg",
+    "artist": "Nuno Tavares (attribution indiquée sur Wikimedia Commons)",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/"
+  },
+  "securite-wifi-kali": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Openwrt-luci-firewall.png/960px-Openwrt-luci-firewall.png",
+    "alt": "Interface générique de configuration d’un pare-feu OpenWrt, illustration de l’administration de la sécurité réseau.",
+    "source": "https://commons.wikimedia.org/wiki/File:Openwrt-luci-firewall.png",
+    "artist": "LuCI",
+    "license": "Apache License 2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0"
+  }
+}

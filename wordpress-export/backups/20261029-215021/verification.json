@@ -1,0 +1,37 @@
+{
+  "network_requests": false,
+  "published": false,
+  "project_count": 8,
+  "project_links_verified": true,
+  "project_slugs": [
+    "sae-2-03",
+    "sae-2-04",
+    "sae-2-02",
+    "sae-2-05",
+    "sae-2-06",
+    "gestion-inscriptions",
+    "reseau-wds-pxe",
+    "securite-wifi-kali"
+  ],
+  "anchors": [
+    "accueil",
+    "a-propos",
+    "parcours",
+    "competences",
+    "projets",
+    "interets",
+    "cv",
+    "contact"
+  ],
+  "destination_count": 8,
+  "generated_project_pages": [
+    "projects/sae-2-03.html",
+    "projects/sae-2-04.html",
+    "projects/sae-2-02.html",
+    "projects/sae-2-05.html",
+    "projects/sae-2-06.html",
+    "projects/gestion-inscriptions.html",
+    "projects/reseau-wds-pxe.html",
+    "projects/securite-wifi-kali.html"
+  ]
+}
