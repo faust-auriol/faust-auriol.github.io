@@ -199,3 +199,114 @@ img {
     padding-inline: 1rem;
   }
 }
+
+@media (max-width: 48rem) {
+  .hero {
+    align-items: stretch;
+    gap: 0;
+    padding: 3.5rem 1.25rem 2.5rem;
+  }
+
+  .hero-copy {
+    min-width: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.35rem, 11vw, 3.8rem);
+    max-width: 100%;
+  }
+
+  .hero-summary {
+    overflow-wrap: anywhere;
+  }
+
+  .hero-actions {
+    gap: .65rem;
+    margin-top: 1.5rem;
+  }
+
+  .hero-actions .button {
+    flex: 1 1 8rem;
+    min-width: 0;
+    padding-inline: .75rem;
+    text-align: center;
+  }
+
+  .hero-visual {
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 0;
+    padding: 2rem 0 .75rem;
+  }
+
+  .portrait-placeholder {
+    flex: 0 0 auto;
+    height: clamp(10rem, 44vw, 12.5rem);
+    min-height: 0;
+    min-width: 0;
+    width: clamp(10rem, 44vw, 12.5rem);
+  }
+
+  .orbit-one,
+  .orbit-two {
+    left: 50%;
+    top: calc(2rem + clamp(5rem, 22vw, 6.25rem));
+  }
+
+  .orbit-one {
+    height: clamp(13rem, 65vw, 17rem);
+    transform: translate(-50%, -50%);
+    width: clamp(13rem, 65vw, 17rem);
+  }
+
+  .orbit-two {
+    height: clamp(10rem, 50vw, 13rem);
+    max-width: calc(100vw - 2.5rem);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: clamp(13rem, 72vw, 18rem);
+  }
+
+  .visual-caption {
+    bottom: auto;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+    right: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 48.001rem) and (max-width: 65rem) {
+  .hero {
+    gap: 1.5rem;
+    padding-inline: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  .hero-visual {
+    min-width: 0;
+    min-height: 22rem;
+  }
+
+  .portrait-placeholder {
+    height: clamp(12rem, 20vw, 15rem);
+    min-height: 0;
+    min-width: 0;
+    width: clamp(12rem, 20vw, 15rem);
+  }
+
+  .orbit-one {
+    height: clamp(16rem, 30vw, 20rem);
+    width: clamp(16rem, 30vw, 20rem);
+  }
+
+  .orbit-two {
+    height: clamp(12rem, 24vw, 16rem);
+    width: clamp(17rem, 34vw, 22rem);
+  }
+
+  .visual-caption {
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+  }
+}
