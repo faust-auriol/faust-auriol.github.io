@@ -1,7 +1,7 @@
 [
   {
     "category": "Réseaux & systèmes",
-    "items": ["Réseaux informatiques", "Linux", "Kali Linux — Pentest", "Windows Server", "WDS / PXE", "VMware ESXi", "VLAN", "DHCP / DNS", "Active Directory"]
+    "items": ["Réseaux informatiques", "Linux", "Windows Server", "WDS / PXE", "VMware ESXi", "VLAN", "DHCP / DNS", "Active Directory"]
   },
   {
     "category": "Bases de données",
@@ -13,6 +13,10 @@
   },
   {
     "category": "Outils",
-    "items": ["Git / GitLab", "GanttProject", "Microsoft Office","Docker", "VMware ESXi"]
+    "items": ["Git / GitLab", "GanttProject", "Microsoft Office","Docker", "VMware ESXi", "Wireshark"]
+  },
+  {
+    "category": "Cybersécurité",
+    "items": ["Kali Linux – Pentest", "Notions de cybersécurité"]
   }
 ]
