@@ -47,7 +47,7 @@ async function renderPortfolioData() {
       skillsList.append(card);
     });
 
-    projects.forEach(({ title, technologies, category, url, reference }, index) => {
+    projects.forEach(({ title, description, technologies, category, url, reference }, index) => {
       const card = document.createElement('article');
       card.className = 'project-card';
       const number = document.createElement('span');
@@ -56,6 +56,12 @@ async function renderPortfolioData() {
       const heading = document.createElement('h3');
       heading.textContent = title;
       card.append(number, heading);
+      if (description) {
+        const summary = document.createElement('p');
+        summary.className = 'project-description';
+        summary.textContent = description;
+        card.append(summary);
+      }
       // Afficher la référence du projet si disponible
       if (reference) {
         const ref = document.createElement('p');

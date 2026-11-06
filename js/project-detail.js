@@ -32,6 +32,83 @@ function createContentSection(className, label, title, content) {
   return section;
 }
 
+function createReportFigure(imageData) {
+  const figure = document.createElement('figure');
+  figure.className = 'project-report-figure';
+  const image = document.createElement('img');
+  image.src = imageData.src;
+  image.alt = imageData.alt;
+  image.loading = 'lazy';
+  image.decoding = 'async';
+  figure.append(image);
+
+  const caption = document.createElement('figcaption');
+  caption.textContent = imageData.caption;
+  figure.append(caption);
+  return figure;
+}
+
+function appendReportContent(container, content) {
+  content.paragraphs?.forEach((paragraph) => {
+    const text = document.createElement('p');
+    text.textContent = paragraph;
+    container.append(text);
+  });
+  if (content.commands?.length) {
+    const commandBlock = document.createElement('pre');
+    commandBlock.className = 'project-report-commands';
+    const code = document.createElement('code');
+    code.textContent = content.commands.join('\n');
+    commandBlock.append(code);
+    container.append(commandBlock);
+  }
+  if (content.items?.length) container.append(createList(content.items, 'project-checklist'));
+  content.figures?.forEach((figure) => container.append(createReportFigure(figure)));
+}
+
+function renderReportSections(main, sections) {
+  sections.forEach((sectionData) => {
+    const section = document.createElement('section');
+    section.className = `project-section project-report-section is-${sectionData.tone}`;
+    section.append(createHeading(sectionData.label, sectionData.title));
+
+    const content = document.createElement('div');
+    content.className = 'project-report-content';
+    appendReportContent(content, sectionData);
+
+    sectionData.subsections?.forEach((subsectionData) => {
+      const subsection = document.createElement('div');
+      subsection.className = 'project-report-subsection';
+      const heading = document.createElement('h3');
+      heading.textContent = subsectionData.title;
+      subsection.append(heading);
+      appendReportContent(subsection, subsectionData);
+      content.append(subsection);
+    });
+
+    if (sectionData.note) {
+      const note = document.createElement('p');
+      note.className = 'project-report-note';
+      note.textContent = sectionData.note;
+      content.append(note);
+    }
+
+    section.append(content);
+    main.append(section);
+  });
+}
+
+function createReturnSection() {
+  const section = document.createElement('section');
+  section.className = 'project-return-section';
+  const returnButton = document.createElement('a');
+  returnButton.className = 'button';
+  returnButton.href = '../index.html#projets';
+  returnButton.textContent = '← Retour aux projets';
+  section.append(returnButton);
+  return section;
+}
+
 function createProjectIllustration(projectId, imageData) {
   if (!imageData || !imageData.src) return null;
 
@@ -106,6 +183,12 @@ async function renderProjectDetail() {
     hero.append(backLink, category, heading);
     main.append(hero);
 
+    if (project.sections?.length) {
+      renderReportSections(main, project.sections);
+      main.append(createReturnSection());
+      return;
+    }
+
     const illustration = createProjectIllustration(projectId, imageManifest[projectId]);
     if (illustration) main.append(illustration);
 
@@ -141,14 +224,7 @@ async function renderProjectDetail() {
       main.append(section);
     }
 
-    const returnSection = document.createElement('section');
-    returnSection.className = 'project-return-section';
-    const returnButton = document.createElement('a');
-    returnButton.className = 'button';
-    returnButton.href = '../index.html#projets';
-    returnButton.textContent = '← Retour aux projets';
-    returnSection.append(returnButton);
-    main.append(returnSection);
+    main.append(createReturnSection());
   } catch (error) {
     console.error('Impossible de charger la fiche projet.', error);
   }

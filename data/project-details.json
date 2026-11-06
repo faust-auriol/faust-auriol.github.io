@@ -54,5 +54,311 @@
     "presentation": ["Projet réalisé avec Kali Linux autour de la sécurité réseau et du test de sécurité d’un point d’accès Wi-Fi."],
     "work": ["Test de sécurité d’un point d’accès Wi-Fi.", "Utilisation de commandes et d’outils de test d’intrusion.", "Travail autour de la sécurité réseau."],
     "skills": ["Kali Linux", "Test d’intrusion", "Sécurité réseau"]
+  },
+  "audit-securite-reseau": {
+    "category": "Cybersécurité · Laboratoire virtualisé isolé",
+    "title": "Audit de sécurité réseau d’une PME",
+    "sections": [
+      {
+        "label": "01 — CONTEXTE",
+        "title": "Cadre et objectifs",
+        "tone": "white",
+        "paragraphs": [
+          "Cet audit porte sur un laboratoire virtualisé inspiré d’un réseau de PME. Il vise à repérer les services accessibles, à comprendre les risques liés à leur configuration, puis à appliquer et vérifier des mesures correctives sur un clone dédié.",
+          "Le périmètre se limite aux machines du réseau Host-Only décrit ci-dessous. Il s’agit d’un laboratoire pédagogique personnel isolé, utilisé pour l’apprentissage et des tests autorisés : aucun système externe n’a été testé et aucun exploit Metasploit n’a été exécuté."
+        ],
+        "items": [
+          "Cartographier la surface réseau et relever les services exposés.",
+          "Évaluer les accès anonymes FTP et SMB et rechercher des vulnérabilités documentées.",
+          "Appliquer des corrections sur une copie de la cible, puis comparer les résultats avant et après.",
+          "Distinguer les versions détectées, les conditions théoriques d’une vulnérabilité et sa validation effective."
+        ]
+      },
+      {
+        "label": "02 — ENVIRONNEMENT",
+        "title": "Un laboratoire isolé",
+        "tone": "paper",
+        "paragraphs": [
+          "Les essais sont réalisés avec VirtualBox sur un réseau Host-Only, sans exposition volontaire des machines vers un réseau tiers. La machine Metasploitable 2 sert de cible initiale ; son clone reçoit les modifications de remédiation."
+        ],
+        "items": [
+          "Kali Linux — 192.168.56.1 : poste d’audit.",
+          "Metasploitable 2 — 192.168.56.101 : cible initiale observée.",
+          "Clone de remédiation — 192.168.56.102 : copie utilisée pour les corrections et leur vérification.",
+          "VirtualBox — réseau privé Host-Only pour isoler les échanges du laboratoire."
+        ],
+        "figures": [
+          {
+            "src": "../assets/images/projects/audit-securite-reseau/01-reseau-host-only.png",
+            "alt": "Configuration VirtualBox du réseau Host-Only du laboratoire d’audit.",
+            "caption": "Réseau Host-Only VirtualBox : les machines Kali, Metasploitable 2 et le clone communiquent dans le périmètre isolé du laboratoire."
+          }
+        ]
+      },
+      {
+        "label": "03 — RECONNAISSANCE RÉSEAU",
+        "title": "Cartographier les services exposés",
+        "tone": "white",
+        "paragraphs": [
+          "La reconnaissance Nmap a d’abord confirmé la disponibilité de la cible, puis couvert les ports TCP afin d’identifier la surface d’exposition. Une détection de services et de versions a ensuite précisé les logiciels annoncés par les ports pertinents."
+        ],
+        "commands": [
+          "sudo nmap -sn 192.168.56.101",
+          "sudo nmap -sS -p- 192.168.56.101",
+          "sudo nmap -sV -sC -p- 192.168.56.101"
+        ],
+        "items": [
+          "Le scan complet a identifié 30 ports TCP ouverts : 21, 22, 23, 25, 53, 80, 111, 139, 445, 512, 513, 514, 1099, 1524, 2049, 2121, 3306, 3632, 5432, 5900, 6000, 6667, 6697, 8009, 8180, 8787, 37937, 40188, 49273 et 56341.",
+          "Les services identifiés comprennent FTP, SSH, Telnet, SMTP, DNS, HTTP, RPC, SMB, MySQL et PostgreSQL, ainsi que des services sur plusieurs ports élevés.",
+          "Les versions relevées incluent vsftpd 2.3.4 (21/tcp), OpenSSH 4.7p1 Debian (22/tcp), Linux telnetd (23/tcp), Postfix smtpd (25/tcp), ISC BIND 9.4.2 (53/tcp), Apache httpd 2.2.8 avec DAV/2 (80/tcp), rpcbind 2 (111/tcp) et Samba 3.0.20-Debian (445/tcp).",
+          "FTP sur 21/tcp et Telnet sur 23/tcp méritent une attention particulière : ces services historiques peuvent transmettre des informations sans chiffrement adapté.",
+          "Les ports SMB 139/445 exposent le service de partage ; les services web, DNS et bases de données augmentent aussi la surface accessible et doivent être limités aux besoins réels.",
+          "L’exposition d’un port signale un service à examiner ; elle ne suffit pas, à elle seule, à confirmer une vulnérabilité exploitable."
+        ],
+        "figures": [
+          {
+            "src": "../assets/images/projects/audit-securite-reseau/02-decouverte-machine-cible.png",
+            "alt": "Résultat de la découverte de la machine Metasploitable 2 sur le réseau isolé.",
+            "caption": "Découverte de la cible 192.168.56.101 et confirmation qu’elle répond sur le réseau Host-Only."
+          },
+          {
+            "src": "../assets/images/projects/audit-securite-reseau/03-scan-complet-ports-tcp.png",
+            "alt": "Résultat du scan complet des ports TCP de Metasploitable 2.",
+            "caption": "Scan TCP complet : plusieurs services sont accessibles, dont FTP, Telnet, HTTP, SMB et des services de base de données."
+          },
+          {
+            "src": "../assets/images/projects/audit-securite-reseau/04-detection-services-versions.png",
+            "alt": "Détection Nmap des services et versions annoncés par la cible.",
+            "caption": "Détection des versions, notamment vsftpd 2.3.4 sur FTP et Samba 3.0.20 sur SMB ; ces bannières orientent l’analyse sans prouver à elles seules l’état réel du logiciel."
+          }
+        ]
+      },
+      {
+        "label": "04 — ÉNUMÉRATION",
+        "title": "Examiner les accès FTP et SMB",
+        "tone": "paper",
+        "paragraphs": [
+          "L’énumération a vérifié les possibilités réellement offertes par les services accessibles depuis le poste Kali, sans dépasser les opérations prévues dans le laboratoire."
+        ],
+        "subsections": [
+          {
+            "title": "FTP · vsftpd 2.3.4",
+            "paragraphs": [
+                "La connexion anonyme à la cible initiale 192.168.56.101 est acceptée. Le répertoire racine a pu être consulté ; la tentative de dépôt d’un fichier dans le répertoire testé a été refusée."
+            ],
+              "commands": [
+                "ftp 192.168.56.101"
+              ],
+            "figures": [
+              {
+                "src": "../assets/images/projects/audit-securite-reseau/06-connexion-ftp-anonyme.png",
+                "alt": "Connexion anonyme FTP et consultation du répertoire racine sur la cible initiale.",
+                "caption": "FTP sur 192.168.56.101 : authentification anonyme acceptée et listing du répertoire racine consultable."
+              }
+            ]
+          },
+          {
+            "title": "SMB · Samba 3.0.20",
+            "paragraphs": [
+                "L’analyse Nmap a identifié Samba 3.0.20-Debian sur la cible initiale 192.168.56.101 et une signature SMB désactivée. L’énumération des partages a ensuite permis une connexion anonyme au partage tmp. Un test d’écriture avec un fichier de contrôle a réussi, puis le fichier a été supprimé. Ce constat décrit les droits observés sur la cible initiale, pas une exécution de code."
+            ],
+              "commands": [
+                "sudo nmap -Pn -p 139,445 -sV -sC 192.168.56.101"
+              ],
+            "figures": [
+              {
+                "src": "../assets/images/projects/audit-securite-reseau/07-enumeration-smb.png",
+                "alt": "Énumération Nmap du service Samba et de ses informations réseau.",
+                "caption": "Énumération SMB : les ports 139/445 annoncent Samba 3.0.20 et exposent des informations NetBIOS."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "05 — RECHERCHE ET ANALYSE DES VULNÉRABILITÉS",
+        "title": "Évaluer les pistes sans surinterpréter",
+        "tone": "white",
+        "paragraphs": [
+          "Les versions relevées ont servi de point de départ à une recherche documentaire avec SearchSploit et à l’examen des références de modules Metasploit. Cette étape identifie des pistes et leurs conditions ; elle ne constitue pas une confirmation d’exploitation."
+        ],
+        "subsections": [
+          {
+            "title": "vsftpd 2.3.4 · porte dérobée historique",
+            "paragraphs": [
+                "La recherche SearchSploit fait ressortir une porte dérobée historiquement associée à certaines versions compromises de vsftpd 2.3.4 (CVE-2011-2523). La présence de cette version dans une bannière ne prouve pas que le binaire installé provient de l’archive compromise ni que le comportement concerné est présent. Cette piste n’a pas été confirmée techniquement sur la cible."
+            ],
+              "commands": [
+                "searchsploit vsftpd 2.3.4"
+              ],
+            "figures": [
+              {
+                "src": "../assets/images/projects/audit-securite-reseau/05-recherche-vulnerabilite-vsftpd.png",
+                "alt": "Résultats SearchSploit pour vsftpd 2.3.4.",
+                "caption": "Recherche SearchSploit : références historiques associées à vsftpd 2.3.4 ; un résultat de recherche ne confirme pas la vulnérabilité sur cette machine."
+              }
+            ]
+          },
+          {
+            "title": "Samba 3.0.20 · CVE-2007-2447",
+            "paragraphs": [
+                "SearchSploit signale une piste liée à CVE-2007-2447, concernant l’option username map script dans Samba 3.0.20 à 3.0.25rc3. La vulnérabilité dépend de la présence et de la configuration de cette option ainsi que de l’exposition du service. La seule version détectée ne prouve pas que la cible satisfait les prérequis ; CVE-2007-2447 n’a pas été confirmée techniquement."
+            ],
+              "commands": [
+                "searchsploit Samba 3.0.20"
+              ],
+            "figures": [
+              {
+                "src": "../assets/images/projects/audit-securite-reseau/08-recherche-vulnerabilite-samba.png",
+                "alt": "Résultats SearchSploit pour Samba 3.0.20, dont une référence à username map script.",
+                "caption": "SearchSploit pour Samba 3.0.20 : la référence username map script conduit à examiner CVE-2007-2447 et ses prérequis."
+              }
+            ]
+          },
+          {
+            "title": "Module Metasploit · analyse documentaire uniquement",
+            "paragraphs": [
+                "Le module exploit/multi/samba/usermap_script a été recherché dans Metasploit et sa fiche consultée. La documentation précise les prérequis liés à la configuration username map script et au service SMB concerné. Le module n’a pas été lancé : aucun exploit Metasploit n’a été exécuté et aucune vulnérabilité n’est revendiquée comme confirmée."
+            ],
+              "commands": [
+                "msfconsole -q",
+                "search CVE-2007-2447"
+              ],
+            "figures": [
+              {
+                "src": "../assets/images/projects/audit-securite-reseau/09-investigation-metasploit.png",
+                "alt": "Recherche du module Samba usermap_script dans Metasploit.",
+                "caption": "Recherche du module associé à CVE-2007-2447 dans Metasploit ; il s’agit d’une investigation documentaire."
+              },
+              {
+                "src": "../assets/images/projects/audit-securite-reseau/10-analyse-module-metasploit.png",
+                "alt": "Fiche d’information du module Metasploit et de ses prérequis déclarés.",
+                "caption": "Lecture de la fiche du module : prérequis, port cible et limites de validation ; aucune commande d’exploitation n’a été exécutée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "06 — REMÉDIATION",
+        "title": "Corriger le clone, préserver la cible initiale",
+        "tone": "paper",
+        "paragraphs": [
+          "Les mesures ont été appliquées uniquement au clone de remédiation 192.168.56.102. La machine initiale 192.168.56.101 n’a pas été modifiée."
+        ],
+        "commands": [
+          "sudo nano /etc/vsftpd.conf",
+          "sudo /etc/init.d/vsftpd restart",
+          "sudo nano /etc/samba/smb.conf",
+          "sudo testparm",
+          "sudo /etc/init.d/samba restart",
+          "sudo /etc/init.d/openbsd-inetd restart"
+        ],
+        "items": [
+          "Dans /etc/vsftpd.conf : anonymous_enable=NO désactive l’authentification FTP anonyme.",
+          "Dans /etc/samba/smb.conf, section [global] : map to guest = Never.",
+          "Dans /etc/samba/smb.conf, section [tmp] : guest ok = no et read only = yes.",
+          "La configuration Samba a été contrôlée avec testparm avant le redémarrage des services. Ces corrections ont été appliquées au clone, pas à la machine initiale."
+        ],
+        "note": "Les captures documentent les changements réalisés sur le clone. Le résultat SMB observé ensuite montre que la restriction de tmp n’a pas supprimé toute l’énumération anonyme des partages.",
+        "figures": [
+          {
+            "src": "../assets/images/projects/audit-securite-reseau/11-remediation-01.png",
+            "alt": "Configuration des partages Samba sur le clone de remédiation.",
+            "caption": "État de la configuration Samba consulté sur le clone 192.168.56.102 avant ajustement des accès."
+          },
+          {
+            "src": "../assets/images/projects/audit-securite-reseau/12-remediation-02.png",
+            "alt": "Redémarrage du service Samba après modification de configuration sur le clone.",
+            "caption": "Redémarrage des services Samba sur le clone pour appliquer la configuration modifiée."
+          },
+          {
+            "src": "../assets/images/projects/audit-securite-reseau/13-remediation-03.png",
+            "alt": "Vue de la configuration du partage tmp sur le clone de remédiation.",
+            "caption": "Contrôle de la section du partage tmp dans la configuration Samba du clone."
+          },
+          {
+            "src": "../assets/images/projects/audit-securite-reseau/14-remediation-04.png",
+            "alt": "Paramètres des permissions et des partages Samba après intervention.",
+            "caption": "Vérification des paramètres de partage et des permissions SMB après les ajustements."
+          },
+          {
+            "src": "../assets/images/projects/audit-securite-reseau/15-remediation-05.png",
+            "alt": "État final affiché de la configuration des partages Samba sur le clone.",
+            "caption": "Configuration Samba du clone consultée en fin d’intervention ; la validation effective est présentée dans la section suivante."
+          }
+        ]
+      },
+      {
+        "label": "07 — VÉRIFICATION APRÈS REMÉDIATION",
+        "title": "Comparer les accès sur le clone",
+        "tone": "white",
+        "paragraphs": [
+          "Les contrôles ont été rejoués vers le clone 192.168.56.102 après application des corrections. Les résultats distinguent le refus d’accès FTP de la restriction partielle constatée côté SMB."
+        ],
+        "commands": [
+          "ftp 192.168.56.102",
+          "smbclient -L //192.168.56.102 -N",
+          "smbclient //192.168.56.102/tmp -N"
+        ],
+        "items": [
+          "FTP anonyme : connexion refusée avec 530 Login incorrect.",
+          "SMB : smbclient -L confirme que l’authentification anonyme reste possible et que les noms des partages restent visibles.",
+          "Partage SMB tmp : l’accès anonyme est refusé avec NT_STATUS_ACCESS_DENIED.",
+          "Conclusion : le partage tmp est protégé pour l’accès testé, mais la remédiation SMB reste partielle puisque l’énumération anonyme subsiste."
+        ],
+        "figures": [
+          {
+            "src": "../assets/images/projects/audit-securite-reseau/16-verification-remediation-ftp-smb.png",
+            "alt": "Résultats de vérification FTP et SMB sur le clone après remédiation.",
+            "caption": "Contrôle après correction sur 192.168.56.102 : refus FTP anonyme, énumération SMB encore possible et accès au partage tmp refusé."
+          }
+        ]
+      },
+      {
+        "label": "08 — BILAN ET COMPÉTENCES",
+        "title": "Méthode, analyse et recul",
+        "tone": "paper",
+        "paragraphs": [
+          "Ce travail met en pratique une démarche d’audit progressive : observer, énumérer, confronter les résultats aux références de vulnérabilités, corriger sur une copie, puis vérifier les effets sans assimiler une piste documentaire à une exploitation confirmée."
+        ],
+        "items": [
+          "Reconnaissance réseau et analyse de la surface exposée.",
+          "Énumération des services FTP et SMB.",
+          "Recherche et analyse de vulnérabilités documentées.",
+          "Utilisation de Nmap, SearchSploit et Metasploit pour l’observation et l’analyse.",
+          "Durcissement de services Linux et ajustement des permissions SMB.",
+          "Vérification des mesures correctives sur un clone.",
+          "Analyse critique des résultats, des prérequis et des limites de validation."
+        ],
+        "subsections": [
+          {
+            "title": "Synthèse des contrôles",
+            "items": [
+              "Découverte réseau : réussie ; identification des services : réalisée.",
+              "FTP anonyme sur la cible initiale : accepté ; dépôt dans le répertoire testé : refusé.",
+              "FTP anonyme sur le clone après correction : refusé.",
+              "Énumération SMB anonyme sur le clone : toujours possible.",
+              "Accès anonyme au partage tmp sur le clone : refusé.",
+              "Porte dérobée vsftpd 2.3.4 et CVE-2007-2447 : non confirmées techniquement."
+            ]
+          },
+          {
+            "title": "Recommandations de sécurité",
+            "items": [
+              "FTP : désactiver l’accès anonyme, privilégier SFTP ou FTPS, maintenir le serveur à jour et limiter les permissions des répertoires.",
+              "SMB / Samba : désactiver les accès invités inutiles, restreindre l’énumération des partages, appliquer le moindre privilège, maintenir Samba à jour, activer la signature SMB lorsque compatible et contrôler les permissions de chaque partage.",
+              "Réseau : réduire les services exposés, filtrer les ports inutiles, surveiller les connexions et les accès aux partages, et réaliser régulièrement des audits."
+            ]
+          },
+          {
+            "title": "Limites et conclusion",
+            "paragraphs": [
+              "Les tests de remédiation présentés portent sur FTP et le partage SMB tmp ; ils ne démontrent pas la correction de toutes les vulnérabilités de la machine. Les versions anciennes détectées sont des indicateurs de risque, pas une preuve d’exploitabilité. La porte dérobée vsftpd et CVE-2007-2447 n’ont pas été confirmées, l’énumération SMB anonyme persiste, et les retests ont été réalisés sur le clone isolé uniquement."
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

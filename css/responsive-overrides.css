@@ -115,6 +115,94 @@ img {
   overflow-wrap: anywhere;
 }
 
+.project-detail-page .project-report-section.is-white {
+  background: var(--white);
+  box-shadow: 0 0 0 100vmax var(--white);
+  clip-path: inset(0 -100vmax);
+}
+
+.project-detail-page .project-report-section.is-paper {
+  background: var(--paper);
+}
+
+.project-report-content {
+  max-width: 68rem;
+}
+
+.project-report-content > p,
+.project-report-subsection > p {
+  line-height: 1.8;
+  max-width: 62rem;
+}
+
+.project-report-content > .project-checklist {
+  margin-block: 1.5rem;
+  max-width: 62rem;
+}
+
+.project-report-commands {
+  background: var(--navy);
+  border-left: 3px solid var(--cyan);
+  border-radius: .35rem;
+  color: #e9f7f7;
+  font-family: "DM Mono", monospace;
+  font-size: .78rem;
+  line-height: 1.65;
+  margin: 1.25rem 0;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+  white-space: pre;
+}
+
+.project-report-subsection {
+  margin-top: 3rem;
+}
+
+.project-report-subsection h3 {
+  color: var(--cyan-deep);
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+}
+
+.project-report-figure {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: .5rem;
+  margin: 2rem 0 0;
+  max-width: 68rem;
+  overflow: hidden;
+}
+
+.project-report-figure img {
+  background: var(--navy);
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.project-report-figure figcaption {
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+  padding: .8rem 1rem;
+}
+
+.project-report-note {
+  background: var(--white);
+  border-left: 3px solid var(--cyan-deep);
+  color: var(--muted);
+  margin: 1.5rem 0 0;
+  max-width: 62rem;
+  padding: 1rem 1.15rem;
+}
+
+.project-description {
+  line-height: 1.6;
+}
+
 .project-detail-page .project-return-section .button {
   justify-content: center;
   max-width: 100%;

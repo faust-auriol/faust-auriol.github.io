@@ -6,5 +6,6 @@
   { "title": "Travail en équipe — AudioLearn", "reference": "SAÉ 2.06 — BUT Informatique", "category": "BUT Informatique · Semestre 2", "url": "projects/sae-2-06.html" },
   { "title": "Application de gestion des inscriptions", "category": "Licence Professionnelle", "technologies": ["Java", "JavaFX", "MySQL", "JDBC"], "url": "projects/gestion-inscriptions.html" },
   { "title": "Mise en place d’un réseau WDS / PXE", "category": "Licence Professionnelle", "technologies": ["WDS", "PXE", "DHCP"], "url": "projects/reseau-wds-pxe.html" },
-  { "title": "Test de sécurité d’un point d’accès Wi-Fi avec Kali Linux", "category": "Licence Professionnelle", "technologies": ["Kali Linux", "Test d’intrusion", "Sécurité réseau"], "url": "projects/securite-wifi-kali.html" }
+  { "title": "Test de sécurité d’un point d’accès Wi-Fi avec Kali Linux", "category": "Licence Professionnelle", "technologies": ["Kali Linux", "Test d’intrusion", "Sécurité réseau"], "url": "projects/securite-wifi-kali.html" },
+  { "title": "Audit de sécurité réseau d’une PME", "description": "Audit d’un environnement réseau virtualisé avec Nmap, énumération FTP/SMB, analyse de vulnérabilités et remédiation.", "category": "Cybersécurité", "technologies": ["Nmap", "SearchSploit", "Metasploit", "Kali Linux"], "url": "projects/audit-securite-reseau.html" }
 ]
