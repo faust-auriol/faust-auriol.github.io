@@ -181,6 +181,15 @@ async function renderProjectDetail() {
     const heading = document.createElement('h1');
     heading.textContent = project.title;
     hero.append(backLink, category, heading);
+    if (project.website) {
+      const websiteLink = document.createElement('a');
+      websiteLink.className = 'button';
+      websiteLink.href = project.website;
+      websiteLink.target = '_blank';
+      websiteLink.rel = 'noopener noreferrer';
+      websiteLink.textContent = 'Visiter le site';
+      hero.append(websiteLink);
+    }
     main.append(hero);
 
     if (project.sections?.length) {

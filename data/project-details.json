@@ -55,6 +55,46 @@
     "work": ["Test de sécurité d’un point d’accès Wi-Fi.", "Utilisation de commandes et d’outils de test d’intrusion.", "Travail autour de la sécurité réseau."],
     "skills": ["Kali Linux", "Test d’intrusion", "Sécurité réseau"]
   },
+  "univfst": {
+    "category": "Développement web",
+    "title": "Plateforme de ressources pédagogiques – UNIV-MARIEN-NGOUABI (UNIVFST)",
+    "website": "https://univfst.free.nf/?i=1",
+    "sections": [
+      {
+        "tone": "paper",
+        "label": "01 — PRÉSENTATION",
+        "title": "Présentation du projet",
+        "paragraphs": ["Plateforme web destinée à centraliser et organiser les ressources pédagogiques universitaires par filière et parcours."]
+      },
+      {
+        "tone": "white",
+        "label": "02 — FONCTIONNALITÉS",
+        "title": "Fonctionnalités",
+        "items": [
+          "Consultation des cours, travaux dirigés et sujets d'examen.",
+          "Organisation des ressources pédagogiques.",
+          "Authentification des utilisateurs.",
+          "Interface d'administration.",
+          "Gestion des utilisateurs.",
+          "Gestion des ressources pédagogiques.",
+          "Gestion des filières et des parcours.",
+          "Gestion des données avec MySQL."
+        ]
+      },
+      {
+        "tone": "paper",
+        "label": "03 — TECHNOLOGIES",
+        "title": "Technologies et hébergement",
+        "items": ["HTML5", "CSS3", "PHP", "MySQL", "Hébergement : InfinityFree."]
+      },
+      {
+        "tone": "white",
+        "label": "04 — RÉALISATION",
+        "title": "Développement assisté par IA",
+        "paragraphs": ["Le développement a été réalisé avec l'assistance de GitHub Copilot dans VS Code. J'ai défini les besoins, orienté le développement à travers des instructions, suivi les modifications et vérifié le résultat."]
+      }
+    ]
+  },
   "audit-securite-reseau": {
     "category": "Cybersécurité · Laboratoire virtualisé isolé",
     "title": "Audit de sécurité réseau d’une PME",

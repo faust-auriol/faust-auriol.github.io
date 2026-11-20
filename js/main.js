@@ -47,7 +47,7 @@ async function renderPortfolioData() {
       skillsList.append(card);
     });
 
-    projects.forEach(({ title, description, technologies, category, url, reference }, index) => {
+    projects.forEach(({ title, description, technologies, category, url, reference, externalUrl }, index) => {
       const card = document.createElement('article');
       card.className = 'project-card';
       const number = document.createElement('span');
@@ -79,6 +79,15 @@ async function renderPortfolioData() {
       }
       button.textContent = 'Voir le projet';
       card.append(button);
+      if (externalUrl) {
+        const externalButton = document.createElement('a');
+        externalButton.className = 'button button-secondary';
+        externalButton.href = externalUrl;
+        externalButton.target = '_blank';
+        externalButton.rel = 'noopener noreferrer';
+        externalButton.textContent = 'Visiter le site';
+        card.append(externalButton);
+      }
       projectsList.append(card);
     });
   } catch (error) {
@@ -92,25 +101,3 @@ async function renderPortfolioData() {
 }
 
 renderPortfolioData();
-
-// Vérifie si le CV PDF est présent et active le bouton de téléchargement
-async function checkAndActivateCV() {
-  const container = document.querySelector('#cv');
-  if (!container) return;
-  const disabledBtn = container.querySelector('.button-disabled');
-  try {
-    const resp = await fetch('documents/cv.pdf', { method: 'HEAD' });
-    if (resp.ok && disabledBtn) {
-      const link = document.createElement('a');
-      link.className = 'button';
-      link.href = 'documents/cv.pdf';
-      link.setAttribute('download', '');
-      link.innerHTML = 'Télécharger mon CV <span aria-hidden="true">↓</span>';
-      disabledBtn.replaceWith(link);
-    }
-  } catch (e) {
-    // En local sans serveur ou en cas d'erreur, laisser le bouton désactivé
-  }
-}
-
-checkAndActivateCV();

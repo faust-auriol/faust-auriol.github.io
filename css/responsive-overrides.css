@@ -203,6 +203,16 @@ img {
   line-height: 1.6;
 }
 
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+}
+
+.project-card .button + .button {
+  margin-top: .65rem;
+}
+
 .project-detail-page .project-return-section .button {
   justify-content: center;
   max-width: 100%;
@@ -314,6 +324,13 @@ img {
   }
 
   .hero-actions .button {
+    flex: 1 1 8rem;
+    min-width: 0;
+    padding-inline: .75rem;
+    text-align: center;
+  }
+
+  .cv-actions .button {
     flex: 1 1 8rem;
     min-width: 0;
     padding-inline: .75rem;
