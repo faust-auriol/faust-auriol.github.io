@@ -203,10 +203,39 @@ img {
   line-height: 1.6;
 }
 
-.cv-actions {
+.cv-button-groups {
+  display: grid;
+  gap: .9rem;
+  grid-template-columns: 1fr;
+}
+
+.cv-section-button-groups {
+  flex: 1 1 34rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cv-button-group {
+  display: grid;
+  gap: .5rem;
+  min-width: 0;
+}
+
+.cv-button-label {
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.cv-button-links {
   display: flex;
   flex-wrap: wrap;
-  gap: .8rem;
+  gap: .5rem;
+}
+
+.cv-button-links .button {
+  flex: 1 1 8.5rem;
+  min-width: 0;
+  padding: .7rem;
+  text-align: center;
 }
 
 .project-card .button + .button {
@@ -330,11 +359,13 @@ img {
     text-align: center;
   }
 
-  .cv-actions .button {
+  .cv-section-button-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-button-links .button {
     flex: 1 1 8rem;
-    min-width: 0;
     padding-inline: .75rem;
-    text-align: center;
   }
 
   .hero-visual {
