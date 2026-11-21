@@ -1,0 +1,102 @@
+.cv-page-main {
+  min-height: calc(100svh - 8.5rem);
+}
+
+.cv-home-link {
+  font-size: .78rem;
+  min-height: 44px;
+  padding: .55rem .85rem;
+}
+
+.cv-page-intro {
+  margin: 0 auto;
+  max-width: 46rem;
+  padding: 5rem 0 3rem;
+  text-align: center;
+}
+
+.cv-page-intro h1 {
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+  letter-spacing: -.075em;
+  line-height: 1;
+  margin: 0;
+}
+
+.cv-page-intro > p:last-child {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin: 1rem 0 0;
+}
+
+.cv-profiles {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding-bottom: 5rem;
+}
+
+.cv-profile-card {
+  background: var(--white);
+  border-color: var(--line);
+  justify-content: space-between;
+  min-height: 22rem;
+  padding: 2rem;
+}
+
+.cv-profile-card .section-label {
+  margin-bottom: .8rem;
+}
+
+.cv-profile-card h2 {
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+  letter-spacing: -.045em;
+  line-height: 1.2;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.cv-profile-description {
+  color: var(--muted);
+  margin: 1rem 0 2rem;
+}
+
+.cv-profile-card .cv-button-links {
+  gap: .65rem;
+}
+
+.cv-profile-card .button-secondary {
+  background: var(--paper);
+}
+
+@media (max-width: 48rem) {
+  .cv-page-main {
+    min-height: 0;
+  }
+
+  .cv-page-intro {
+    padding: 3.5rem 0 2.25rem;
+    text-align: left;
+  }
+
+  .cv-page-intro > p:last-child {
+    font-size: .95rem;
+  }
+
+  .cv-profiles {
+    grid-template-columns: 1fr;
+    padding-bottom: 3.5rem;
+  }
+
+  .cv-profile-card {
+    min-height: 0;
+    padding: 1.5rem;
+  }
+
+  .cv-profile-card .cv-button-links {
+    flex-direction: column;
+  }
+
+  .cv-profile-card .cv-button-links .button {
+    width: 100%;
+  }
+}
